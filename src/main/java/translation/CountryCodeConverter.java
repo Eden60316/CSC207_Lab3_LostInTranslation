@@ -54,7 +54,7 @@ public class CountryCodeConverter {
      * @return the name of the country corresponding to the code
      */
     public String fromCountryCode(String code) {
-        return countryToCountryCode.get(code.toLowerCase());
+        return countryCodeToCountry.get(code.toLowerCase());
     }
 
     /**
@@ -63,7 +63,7 @@ public class CountryCodeConverter {
      * @return the 3-letter code of the country
      */
     public String fromCountry(String country) {
-        return countryCodeToCountry.get(country);
+        return countryToCountryCode.get(country);
     }
 
     /**
